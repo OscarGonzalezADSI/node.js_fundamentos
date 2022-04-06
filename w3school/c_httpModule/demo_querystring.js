@@ -2,9 +2,9 @@ const http = require('http');
 const url = require('url');
 
 http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.writeHead(200, {'Content-Type' : 'text/html'});
   let q = url.parse(req.url, true).query;
-  let txt = `${q.year} ${q.month}`;
+  let txt = `${q.ano} / ${q.mes}`;
   res.end(txt);
 }).listen(8080);
 
