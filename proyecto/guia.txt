@@ -1,1 +1,3 @@
-guia
+npm install express 
+npm install mongoose
+npm install cors
