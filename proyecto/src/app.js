@@ -10,10 +10,10 @@ const ProductosRoutes = require("./routes/productos.routes");
 app.use(cors());
 
 //rutas
-app.use("/productos", ProductosRoutes);
-
 app.get('/',(req, res)=>{
     return res.status(200).send({"mensaje" : "hola mundo"});
 });
+
+app.use("/productos", ProductosRoutes);
 
 module.exports = app;
